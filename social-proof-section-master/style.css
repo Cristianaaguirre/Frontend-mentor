@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* Font family */
+
+
+/* font-family: 'Spartan', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+:root {
+    /* primary colors */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+    background-color: var(--White);
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0 , 300px 100px ;
+}
+
+.container {
+    width: 80%;
+    height: 85vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.container__section_one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+    margin: 1.3em 0;
+}
+
+.title h1{
+    width: 60%;
+    color: var(--Very-Dark-Magenta);
+}
+
+.title p {
+    color: var(--Dark-Grayish-Magenta);
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info p {
+    width: 70%;
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+.p-2{
+    margin-left: 2.5em;
+}
+
+.p-3 {
+    margin-left: 5.2em;
+}
+
+
+.container__section_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--Very-Dark-Magenta);
+    width: 350px;
+    height: 240px;
+    padding:2em;
+    border-radius: 10px;
+}
+
+.card-two {
+    transform: translateY(15px);
+}
+
+.card-three {
+    transform: translateY(30px);
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--White);
+    line-height: 23px;
+    width: 100%;
+}
+
+.title-card {
+    display: flex;
+    margin-bottom: 1.4em;
+}
+
+.title-card img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.img + div {
+    margin-left: 10px;
+}
+
+.name h4 {
+    color: var(--White);
+}
+
+.name p {
+    color: var(--Soft-Pink);
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 375px;
+        justify-content: center;
+    }
+    
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        gap: 1em;
+    }
+    
+    .container__section_one {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .title {
+        margin: 1.3em 0;
+    }
+    
+    .title h1{
+        width: 100%;
+    }
+    
+    .title p {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    
+    .info p {
+        width: 100%;
+        padding:1.4em 10px;
+        border-radius: 5px;
+        margin-top: 15px;   
+    }
+    
+    .p-2{
+        margin-left: 0;
+    }
+    
+    .p-3 {
+        margin-left: 0;
+    }
+    
+    
+    .container__section_two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card {
+        margin-bottom: 10px;
+    }
+    
+    .card-two {
+        transform: translateY(0);
+    }
+    
+    .card-three {
+        transform: translateY(0);
+    }
+    
+    .card p {
+        font-size: 15px;
+        font-weight: 400;
+        color:var(--White);
+        line-height: 23px;
+        width: 100%;
+    }
+    
+    .title-card {
+        display: flex;
+        margin-bottom: 1.4em;
+    }
+    
+    .title-card img {
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .img + div {
+        margin-left: 10px;
+    }
+    
+    .name h4 {
+        color: var(--White);
+    }
+    
+    .name p {
+        color: var(--Soft-Pink);
+    }
+    
+
+}
