@@ -1,7 +1,12 @@
-const button = document.querySelector(".btn__container");
+const button = document.querySelectorAll(".btn__container");
+const menu = document.querySelectorAll('.dropdown__item');
 
-button.addEventListener("click", addClase);
+for (let i = 0; i< button.length & menu.length; i++) {
+  const buttonOption = button[i]
+  const dropItem = menu[i]
 
-function addClase() {
-  document.querySelector(".dropdown__item").classList.add("dropdown__item--open")
+  buttonOption.addEventListener('click', function () {
+    dropItem.classList.toggle('dropdown__item--open')
+  })
 }
+  
