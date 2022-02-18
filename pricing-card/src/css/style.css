@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-pink: #ff347f;
+    --color-turquoise: #05dfd7;
+    --fonts:'Open Sans', sans-serif;
+    --background-gradient: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonts);
+}
