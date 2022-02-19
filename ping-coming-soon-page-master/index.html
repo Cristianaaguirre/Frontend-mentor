@@ -4,19 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
 </head>
 <body>
 
-  We are launching soon!
+  <div class="container">
+    <h1>Ping<span>.</span></h1>
 
-  Subscribe and get notified
+    <h2>We are launching <span>soon!</span></h2>
 
-  Notify Me
+    <p>Subscribe</p>
 
-  &copy; Copyright Ping. All rights reserved.
+    <form>
+      <input type="email" placeholder="example@gmail.com">
+      <input type="submit" value="Notify Me">
+    </form>
 
+    <picture>
+      <img src="/images/illustration-dashboard.png">
+    </picture>
+
+    <div class="icons">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    
+    <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
+  </div> <!--Final container-->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
