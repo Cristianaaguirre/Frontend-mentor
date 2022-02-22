@@ -15,7 +15,7 @@
 }
 
 html{
-    font-size: 62.5rem;
+    font-size: 62.5%;
 }
 
 * {
@@ -24,4 +24,89 @@ html{
     box-sizing: border-box;
     list-style: none;
     border: none;
+    font-family: var(--font-family);
 }
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--netural-main-bg);
+}
+
+
+.container {
+    background-color: var(--neutral-card-bg);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2.5rem;
+    border-radius: 1.4rem;
+}
+
+.container .img-hero {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container h3 {
+    margin: 2rem 0 0rem;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.container p:nth-child(3) {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--primary-soft-blue);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: .2rem solid var(--neutral-line);
+}
+
+.eth,
+.date {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.eth > * {
+    font-size: 1.5rem;
+    color: var(--primary-cyan);
+}
+
+.date > * {
+    font-size: 1.5rem;
+    color: var(--primary-soft-blue);
+}
+
+.autor {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.autor img {
+    border: solid .1rem var(--white);
+    border-radius: 100%;
+    width: 3rem;
+}
+
+.autor p {
+    font-size: 1.5rem;
+    color: var(--primary-soft-blue);
+}
+
+.autor p span {
+    color: var(--white);
+}
+
