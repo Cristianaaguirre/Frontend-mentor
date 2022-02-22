@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary colors */
+    --primary-soft-blue:hsl(215, 51%, 70%);
+    --primary-cyan:hsl(178, 100%, 50%);
+    /* Neutral colors */
+    --netural-main-bg: hsl(217, 54%, 11%);
+    --neutral-card-bg: hsl(216, 50%, 16%);
+    --neutral-line: hsl(215, 32%, 27%);
+    --white: #fff;
+    /* Utilities */
+    --font-size-body: 1.8rem;
+    --font-family:'Outfit', sans-serif;
+}
+
+html{
+    font-size: 62.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+}
