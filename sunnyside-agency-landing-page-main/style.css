@@ -173,6 +173,15 @@ header {
 .service__content--modifier{
     text-align: center;
 }
+.graphic h3, 
+.graphic p {
+    color: var(--grapich-desing-text);
+}
+.photography h3,
+.photography p {
+    color: var(--photography-text);
+}
+/* --------------------- */
 /* img-service */
 .service-transform{
     background: url(/images/mobile/image-transform.jpg)center no-repeat;
@@ -239,5 +248,54 @@ header {
 
 }
 
+/* -----------------Testimony------------------- */
 
+.testimony h2 {
+    text-align: center;
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-family: var(--font-two);
+    letter-spacing: .1rem;
+    color: var(--Grayish-blue);
+}
 
+.container__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    width: 30rem;
+    padding: 3rem;
+    text-align: center;
+}
+.card img {
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.card p:nth-child(2) {
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+    font-family: var(--font-one);
+    line-height: 2rem;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card p:nth-child(3){
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+    line-height: 3rem;
+}
+.card p:nth-child(3) span {
+    display: block;
+    font-family: var(--font-one);
+    font-weight: initial;
+    color: var(--Grayish-blue);
+}
