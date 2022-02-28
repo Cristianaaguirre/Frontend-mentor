@@ -13,6 +13,7 @@
     --grapich-desing-text: hsl(167, 40%, 24%);
     --photography-text: hsl(198, 62%, 26%);
     --footer: hsl(168, 34%, 41%);
+    --footer-bg: hsl(168, 58%, 68%);
 
     /* Neutral colors */
 
@@ -357,4 +358,39 @@ header {
     .gallery__bg{
         height: 35rem;
     }
+}
+/* --------------------Gallery--------------------- */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--footer-bg);
+}
+
+footer > * {
+    color: var(--footer);
+    margin: 2rem 0;
+}
+
+footer h3 {
+    font-size: 3rem;
+    font-family: var(--font-one);
+    font-weight: bold;
+}
+
+.navbar__bottom a{
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    font-family: var(--font-one);
+    color: var(--footer);
+}
+
+.social-media {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.social-media__icon{
+    font-size: 3rem;
+    cursor: pointer;
 }
