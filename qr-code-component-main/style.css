@@ -10,8 +10,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 html {
     font-size: 62.5%;
 }
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--light-gray);
+}
+
+img {width: 100%;}
+
+.container {
+    width: 30rem;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.container h2 {
+    margin-top: 1.3rem;
+    font-size: 1.7rem;
+    color: var(--drak-blue);
+}
+
+.container h2 span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+    margin-bottom: 2rem;
+}
+
